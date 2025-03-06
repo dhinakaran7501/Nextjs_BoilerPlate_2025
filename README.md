@@ -9,7 +9,7 @@ This project is built with **Next.js**, **React**, and **TypeScript**, featuring
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone <repository-url>
+git clone <https://github.com/dhinakaran7501/Nextjs_auth_practice.git>
 cd auth
 ```
 
@@ -40,7 +40,7 @@ Husky automates **Git hooks** (pre-commit and commit-msg) to ensure good code qu
 - **`pre-commit`** → Runs `lint-staged` to format and lint staged files.
 - **`commit-msg`** → Ensures that commit messages follow the conventional format.
 
-#### **Commit Message Validation Format:**
+#### **Example Commit Message Validation Format:**
 
 ```
 Format: <type>: <description>
@@ -51,45 +51,6 @@ Examples:
   feat: add user authentication
   fix: resolve payment calculation issue
   docs: update API documentation
-```
-
----
-
-### ✅ Commitlint
-
-Commitlint ensures that all commit messages follow **Conventional Commits**.
-
-#### **Configuration (`commitlint.config.ts`)**
-
-```ts
-import type { UserConfig } from "@commitlint/types";
-
-const Configuration: UserConfig = {
-  extends: ["@commitlint/config-conventional"],
-  rules: {
-    "type-enum": [
-      2,
-      "always",
-      [
-        "build",
-        "chore",
-        "ci",
-        "docs",
-        "feat",
-        "fix",
-        "perf",
-        "refactor",
-        "revert",
-        "style",
-        "test",
-      ],
-    ],
-    "type-empty": [2, "never"],
-    "subject-empty": [2, "never"],
-  },
-};
-
-export default Configuration;
 ```
 
 ---
@@ -114,35 +75,13 @@ npx cz
 
 This ensures a structured commit history.
 
-#### **Commitizen Configuration in `package.json`**
-
-```json
-"config": {
-  "commitizen": {
-    "path": "./node_modules/cz-conventional-changelog"
-  }
-}
-```
+````
 
 ---
 
 ### ✅ Lint-Staged
 
 Lint-Staged ensures that only **staged files** are formatted and linted before committing.
-
-#### **Configuration in `package.json`**
-
-```json
-"lint-staged": {
-  "*.{js,jsx,ts,tsx}": [
-    "eslint --fix",
-    "prettier --write"
-  ],
-  "*.{json,md}": [
-    "prettier --write"
-  ]
-}
-```
 
 ---
 
@@ -152,7 +91,7 @@ Lint-Staged ensures that only **staged files** are formatted and linted before c
 
 ```sh
 npm run dev
-```
+````
 
 Starts the Next.js development server.
 
@@ -209,10 +148,16 @@ Prompts for structured commit messages following **Conventional Commits**.
 
 1. **Follow the commit message format.** Use `npx cz` for structured commits.
 2. **Ensure all linting and formatting checks pass** before pushing changes.
-3. **Run tests before merging PRs.**
+3. **Run tests before merging (PRs - Pull Requests).**
+4. **Use feature branches** (`feature/your-feature-name`) instead of committing directly to `main`.
+5. **Write meaningful commit messages** that describe the purpose of the change.
+6. **Keep PRs small and focused** to make reviewing easier.
+7. **Ensure compatibility** with existing functionality before merging.
+8. **Review other contributors' (PRs - Pull Requests)** to maintain code quality.
+9. **Update documentation** if changes impact project usage.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Dheena](https://www.linkedin.com/in/dhinakaran-ramasamy-7684ba22a/).
