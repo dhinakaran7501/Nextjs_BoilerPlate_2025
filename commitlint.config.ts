@@ -1,19 +1,45 @@
-import type { UserConfig } from '@commitlint/types';
+import type { UserConfig } from "@commitlint/types";
 
 const Configuration: UserConfig = {
-  extends: ['@commitlint/config-conventional'],
-  parserPreset: 'conventional-changelog-atom',
-  formatter: '@commitlint/format',
+  extends: ["@commitlint/config-conventional"],
+  parserPreset: "conventional-changelog-atom",
+  formatter: "@commitlint/format",
   rules: {
-    'type-enum': [
+    "type-enum": [
       2,
-      'always',
-      ['feat', 'fix', 'docs', 'style', 'refactor', 'perf', 'test', 'build', 'ci', 'chore', 'revert'],
+      "always",
+      [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "build",
+        "ci",
+        "chore",
+        "revert",
+      ],
     ],
-    'scope-enum': [
+    "scope-enum": [
       2,
-      'always',
-      ['setup', 'config', 'deps', 'feature', 'bug', 'docs', 'style', 'refactor', 'test', 'build', 'ci', 'release', 'other'],
+      "always",
+      [
+        "setup",
+        "config",
+        "deps",
+        "feature",
+        "bug",
+        "docs",
+        "style",
+        "refactor",
+        "test",
+        "build",
+        "ci",
+        "release",
+        "other",
+      ],
     ],
   },
 };
