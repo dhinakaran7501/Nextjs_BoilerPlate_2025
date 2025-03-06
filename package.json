@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
-    "commit": "cz",
-    "commit-help": "echo 'Commit format examples:\ngit commit -m \"feat: add new feature\"\ngit commit -m \"fix: resolve login issue\"\ngit commit -m \"docs: update README\"\n\nValid types: build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test'"
+    "commit": "cz"
   },
   "dependencies": {
     "next": "15.2.1",
