@@ -1,0 +1,19 @@
+# <type>: <description>
+# |<---- Using a maximum of 50 characters ---->|
+#
+# Examples of types:
+# feat:     A new feature
+# fix:      A bug fix
+# docs:     Documentation changes
+# style:    Code style changes
+# refactor: Code refactoring
+# perf:     Performance improvements
+# test:     Adding/fixing tests
+# build:    Build system changes
+# ci:       CI configuration changes
+# chore:    Other changes
+#
+# Example: feat: add user authentication feature
+#
+# Explain *what* and *why* (not *how*). Include task ID if available:
+# |<---- Try to limit each line to a maximum of 72 characters ---->|
