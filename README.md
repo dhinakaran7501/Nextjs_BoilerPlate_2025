@@ -173,13 +173,11 @@ This folder structure ensures **modularity, maintainability, and scalability** i
 5. **Write meaningful commit messages** that describe the purpose of the change.
 6. **Keep PRs small and focused** to make reviewing easier.
 7. **Ensure compatibility** with existing functionality before merging.
-8. **Review other contributors' PRs (Pull Requests)** to maintain code quality.
+8. **Review other contributors' (PRs - Pull Requests)** to maintain code quality.
 9. **Update documentation** if changes impact project usage.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the [MIT License](https://www.linkedin.com/in/dhinakaran-ramasamy-7684ba22a/).
-
----
+This project is licensed under the [Dheena](https://www.linkedin.com/in/dhinakaran-ramasamy-7684ba22a/).
