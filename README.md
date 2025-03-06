@@ -9,7 +9,7 @@ This project is built with **Next.js**, **React**, and **TypeScript**, featuring
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone <https://github.com/dhinakaran7501/Nextjs_auth_practice.git>
+git clone https://github.com/dhinakaran7501/Nextjs_auth_practice.git
 cd auth
 ```
 
@@ -75,8 +75,6 @@ npx cz
 
 This ensures a structured commit history.
 
-````
-
 ---
 
 ### ✅ Lint-Staged
@@ -91,7 +89,7 @@ Lint-Staged ensures that only **staged files** are formatted and linted before c
 
 ```sh
 npm run dev
-````
+```
 
 Starts the Next.js development server.
 
@@ -129,6 +127,28 @@ Prompts for structured commit messages following **Conventional Commits**.
 
 ---
 
+## 📂 Folder Structure
+
+```
+src/
+│── app/                      # Application-related pages and components
+│── assets/                   # Stores images, PDFs, and other static files
+│── components/               # Reusable components
+│── hooks/                    # Custom hooks
+│── layouts/                  # Layout components (Navbar, Footer, Header, Login, Signup, etc.)
+│── libs/                     # Utility libraries (DB connections, environment variables, etc.)
+│── services/                 # API call functions
+│── templates/                # Email templates or other structured content
+│── types/                    # TypeScript type definitions
+│── utils/                    # Constants and reusable functions
+│── validations/              # Form validation using Formik or Zod
+│── middleware/               # Custom middleware for authentication or request handling
+```
+
+This folder structure ensures **modularity, maintainability, and scalability** in the project. 🚀
+
+---
+
 ## 🎯 Expected Output for Each Script
 
 | Command                                      | Expected Output                                                  |
@@ -153,11 +173,13 @@ Prompts for structured commit messages following **Conventional Commits**.
 5. **Write meaningful commit messages** that describe the purpose of the change.
 6. **Keep PRs small and focused** to make reviewing easier.
 7. **Ensure compatibility** with existing functionality before merging.
-8. **Review other contributors' (PRs - Pull Requests)** to maintain code quality.
+8. **Review other contributors' PRs (Pull Requests)** to maintain code quality.
 9. **Update documentation** if changes impact project usage.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the [Dheena](https://www.linkedin.com/in/dhinakaran-ramasamy-7684ba22a/).
+This project is licensed under the [MIT License](https://www.linkedin.com/in/dhinakaran-ramasamy-7684ba22a/).
+
+---
