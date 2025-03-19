@@ -5,9 +5,13 @@ export const Env = createEnv({
   server: {
     DATABASE_URL: z.string().optional(),
     TOKEN_SECRET: z.string().optional(),
+    NODEMAILER_MAIL: z.string().optional(),
+    NODEMAILER_PASS: z.string().optional(),
   },
   runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
     TOKEN_SECRET: process.env.TOKEN_SECRET,
+    NODEMAILER_MAIL: process.env.NODEMAILER_MAIL,
+    NODEMAILER_PASS: process.env.NODEMAILER_PASS,
   },
 });
