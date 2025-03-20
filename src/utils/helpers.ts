@@ -1,6 +1,7 @@
 import { ErrorResponse, ToastType } from "@/types/utilsTypes";
 import { NextRequest } from "next/server";
 import toast from "react-hot-toast";
+import { CookieKey } from "./secureKeys";
 
 export const setCookie = (
   name: string,
@@ -42,10 +43,10 @@ export const deleteCookie = (name: string): void => {
 
 export function isAuthenticated(req?: NextRequest): boolean {
   if (typeof window !== "undefined") {
-    return !!getCookie("authToken");
+    return !!getCookie(CookieKey);
   }
 
-  const token = req?.cookies.get("authToken")?.value;
+  const token = req?.cookies.get(CookieKey)?.value;
   return !!token;
 }
 
